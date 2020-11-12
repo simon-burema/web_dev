@@ -1,0 +1,80 @@
+body {
+  background-color: #F5F2E8;
+}
+
+/* Bovenste navigatie bar*/
+.navbar { 
+  overflow: hidden;
+  color: #F5F2E8;
+  font-family: Montserrat,Georgia,serif;
+  text-align: center;
+  background-color: #313639;
+  padding: 0; /*15px*/
+  margin: 0;
+  position: fixed; /*Dit zorgt ervoor dat de navigatie bar op dezelfde positie blijft bij scrollen*/
+  top: 0%;
+  width: 100%;
+}
+
+.navbar p{
+  float: right;
+  font-size: 12px; /*20px*/
+  margin-right:2%;
+}
+
+/* Alle tekst bovenin de menubar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #F5F2E8;
+  text-align: center;
+  padding: 2%; /*14px 16px*/
+  border-radius: 1%; /*5px*/
+  text-decoration: none; /* Haalt de link lijnen weg onder de tekst */
+  font-size: 20px;
+}
+/*Hierdoor krijgen de knoppen een andere kleur als je er overheen hovert*/
+.navbar a:hover { 
+  background-color: #ddd;
+  color: black;
+}
+
+.sidebar {
+  overflow: hidden;
+  color: #F5F2E8;
+  font-family: Montserrat,Georgia,serif;
+  text-align: center;
+  background-color: #485C6A;
+  padding: 5% 5%; /*20px 2px*/
+  position: fixed; /*Dit zorgt ervoor dat de navigatie bar op dezelfde positie blijft bij scrollen*/
+  top: 8%; /*95px*/
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.sidebar h2 {
+  margin: 15px;
+  padding: 20px 25px;
+  text-align: center;
+  display: block;
+  padding: 16px 16px;
+}
+
+.sidebar h2:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.main{
+  margin-top: 8%; /*100px*/
+  margin-left: 20%; /*225px*/
+
+}
+.main img { 
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  z-index: -1;
+  margin: 25px;
+}
